@@ -593,21 +593,3 @@ body:not(.home-page) .navbar {
     background: rgba(255, 255, 255, 0.9) !important; /* Heller Hintergrund auf Unterseiten */
 }
 
-/*test Bilder in 750 x 750*/
-/* Setzt die Größe der Swiper-Slides auf ein quadratisches Format */
-.swiper-slide {
-    width: 750px;   /* Breite des Slides */
-    height: 750px;  /* Höhe des Slides */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-/* Passt die Bilder innerhalb der Slides an */
-.swiper-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Das Bild wird so skaliert, dass es den gesamten Slide ausfüllt, wobei Teile des Bildes abgeschnitten werden können, um das Seitenverhältnis beizubehalten */
-    object-position: center; /* Zentriert das Bild innerhalb des Slides */
-}
