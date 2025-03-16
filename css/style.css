@@ -594,10 +594,15 @@ body:not(.home-page) .navbar {
 }
 
 /*test Bilder in 750 x 750*/
-/* Anpassung für Galerie-Bilder */
+/* Anpassung der Swiper-Slide-Bilder */
+.swiper-slide {
+    width: 750px;   /* Breite des Containers */
+    height: 750px;  /* Höhe des Containers */
+}
+
 .swiper-slide img {
-    width: 750px;   /* Bild auf 750px Breite setzen */
-    height: 750px;  /* Bildhöhe ebenfalls auf 750px setzen */
-    object-fit: cover; /* Bild wird zugeschnitten, um das Format zu füllen */
-    object-position: center; /* Falls das Bild zugeschnitten wird, zentriert es sich */
+    width: 100%;    /* Bild füllt die gesamte Containerbreite */
+    height: 100%;   /* Bild füllt die gesamte Containerhöhe */
+    object-fit: cover; /* Bild wird zugeschnitten, um den Container zu füllen */
+    object-position: center; /* Zentriert das Bild innerhalb des Containers */
 }
