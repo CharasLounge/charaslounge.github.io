@@ -593,3 +593,16 @@ body:not(.home-page) .navbar {
     background: rgba(255, 255, 255, 0.9) !important; /* Heller Hintergrund auf Unterseiten */
 }
 
+
+
+/* quadratisch slider gallery */
+.slider-item {
+    aspect-ratio: 1 / 1; /* Erzwingt ein Seitenverhältnis von 1:1 */
+}
+
+.slider-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Sorgt dafür, dass das Bild den Container vollständig ausfüllt */
+}
+
