@@ -646,7 +646,7 @@ p {
 
 /* Falls die Navbar einen Hintergrund auf Unterseiten haben soll */
 body:not(.home-page) .navbar {
-    background: rgba(255, 255, 255, 0.9) !important; /* Heller Hintergrund auf Unterseiten */
+    background: #b9b8b8 !important; /* Heller Hintergrund auf Unterseiten */
 }
 
 
