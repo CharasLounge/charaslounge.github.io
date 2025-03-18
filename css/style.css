@@ -1,7 +1,61 @@
 /* Fonts */
 
 /* orignal -> @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap'); */
-@import url('https://github.com/CharasLounge/charaslounge.github.io/raw/refs/heads/main/fonts/AlegreyaSans-Regular.woff2&display=swap');
+
+/* Lokale Einbindung von Alegreya Sans */
+@font-face {
+    font-family: 'Alegreya Sans';
+    src: url('../fonts/AlegreyaSans-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans';
+    src: url('../fonts/AlegreyaSans-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans';
+    src: url('../fonts/AlegreyaSans-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans';
+    src: url('../fonts/AlegreyaSans-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans';
+    src: url('../fonts/AlegreyaSans-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans';
+    src: url('../fonts/AlegreyaSans-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans';
+    src: url('../fonts/AlegreyaSans-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Anwenden der lokalen Schriftart */
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+}
 
 
 /* Basic */
