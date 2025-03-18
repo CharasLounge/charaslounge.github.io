@@ -862,7 +862,7 @@ body:not(.home-page) .navbar {
     height: 0;
     overflow: hidden;
     max-width: 100%;
-    background: #273138; /* Dunkler Hintergrund deiner Seite */
+    background: #e9e8e6; /* Dunkler Hintergrund deiner Seite */
 }
 
 .video-container iframe {
