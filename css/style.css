@@ -675,3 +675,86 @@ body:not(.home-page) .navbar {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
     }
 }
+
+
+
+
+/* SOUND PLAYER */
+
+.player
+{
+  width: 300px;
+  background: #fff;
+/*   margin: 100px; */
+  padding: 20px 14px 8px 14px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 10px 2px 90px -11px rgba(13,100,76,0.75);
+  -webkit-box-shadow: 10px 2px 90px -11px rgba(13,100,76,0.75);
+  -moz-box-shadow: 10px 2px 90px -11px rgba(13,100,76,0.75);
+}
+
+.imgBx img
+{
+  width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 10px;
+}
+
+.player audio
+{
+  width: 100%;
+  border-radius: 6px;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* Quadratischer Slider mit Player */
+.slider-item {
+    aspect-ratio: 1 / 1; /* Erzwingt ein quadratisches Seitenverhältnis */
+    display: flex;
+    flex-direction: column; /* Bild und Player untereinander */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.slider-item .imgBx img {
+    width: 100%;
+    height: auto; /* Höhe automatisch, um das Seitenverhältnis beizubehalten */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.slider-item .player {
+    width: 100%; /* Player nimmt die volle Breite des Slides ein */
+    background: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 10px 2px 90px -11px rgba(13,100,76,0.75);
+    margin-top: 10px; /* Abstand zwischen Bild und Player */
+}
+
+.slider-item .player audio {
+    width: 100%;
+    border-radius: 6px;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* Swiper Container Anpassung */
+.swiper-container {
+    width: 100%;
+    height: auto; /* Höhe automatisch, damit der Inhalt passt */
+    margin-bottom: 5rem;
+}
+
+@media (max-width: 1200px) {
+    .swiper-container {
+        padding: 0 20px;
+    }
+}
