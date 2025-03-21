@@ -879,3 +879,53 @@ body:not(.home-page) .navbar {
         padding-bottom: 75%; /* Höheres Verhältnis für Mobilgeräte */
     }
 }
+
+
+/* SOCIAL ICONS */
+/* Symbole zentrieren */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Horizontale Zentrierung */
+    align-items: center; /* Vertikale Zentrierung (falls nötig) */
+    list-style: none;
+    padding: 0;
+}
+
+
+/* COLLAPSE BOX */
+/* Container für das Klappbare Element */
+.collapsible-container {
+    width: 100%;
+    max-width: 800px; /* Begrenzung für bessere Lesbarkeit */
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Standardmäßig versteckter Text */
+.collapsible-content {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Button-Styling */
+.collapsible-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.collapsible-button:hover {
+    background-color: #444;
+}
