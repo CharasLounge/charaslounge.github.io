@@ -10,17 +10,24 @@ $(document).ready(function(){
    $('.wrapper').toggleClass('menu--is-revealed');
  });
 
- /* Half Page Responsive */
+ /* Scroll-Animationen */
+ if (typeof WOW === 'function') {
+   new WOW().init();
+ }
 
- $(document).ready(function($) {
-   var alterClass = function() {
-     var ww = document.body.clientWidth;
-     if (ww < 1199) {
-       $('.LeftContent ').removeClass('LeftContent');
-       $('.RightContent ').removeClass('RightContent');
-     } else if (ww >= 1200) {
-       $('.LeftContent').addClass('LeftContent');
-       $('.RightContent ').addClass('RightContent');
-     };
-   };
+ /* Mute/Unmute Button (Startseite) */
+ document.addEventListener('DOMContentLoaded', function() {
+   var video = document.querySelector('.video-background');
+   var muteButton = document.getElementById('muteButton');
+   if (video && muteButton) {
+     muteButton.addEventListener('click', function() {
+       if (video.muted) {
+         video.muted = false;
+         muteButton.textContent = '🔊 Sound';
+       } else {
+         video.muted = true;
+         muteButton.textContent = '🔇 Sound';
+       }
+     });
+   }
  });
