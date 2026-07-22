@@ -1460,3 +1460,69 @@ body:not(.home-page) .navbar {
 		animation: none;
 	}
 }
+
+
+/* KEIN HORIZONTALES SCROLLEN (Bootstrap-Rows, Vinyl, Slider werden geclippt) */
+
+html,
+body {
+	overflow-x: hidden;
+	max-width: 100%;
+}
+
+
+/* KLICKBARE TEXT-LINKS HERVORHEBEN (Startseite/Content)
+   Dezente feine Unterstreichung als Daueraffordanz,
+   beim Hover leuchten nur die Buchstaben warm auf. */
+
+.RightContent .list-unstyled a,
+.RightContent > .row p a,
+.album-release p a {
+	color: #000;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	padding-bottom: 1px;
+	transition: text-shadow 0.35s ease, border-color 0.35s ease, color 0.35s ease;
+}
+
+.RightContent .list-unstyled a:hover,
+.RightContent > .row p a:hover,
+.album-release p a:hover {
+	color: #000;
+	border-bottom-color: #000;
+	text-shadow:
+		0 0 10px rgba(255, 255, 255, 0.95),
+		0 0 22px rgba(255, 238, 200, 0.75);
+}
+
+/* Navigation: gleiches Aufleuchten, ohne die Farben zu ändern */
+
+.navbar .nav-link {
+	transition: text-shadow 0.35s ease, color 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+	text-shadow:
+		0 0 10px rgba(255, 255, 255, 0.9),
+		0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+/* Legal-Links im Footer: gleiche Sprache */
+
+.legal-links a {
+	transition: text-shadow 0.35s ease, color 0.2s ease;
+}
+
+.legal-links a:hover {
+	text-decoration: none;
+	text-shadow:
+		0 0 10px rgba(255, 255, 255, 0.95),
+		0 0 20px rgba(255, 238, 200, 0.7);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.RightContent .list-unstyled a,
+	.navbar .nav-link,
+	.legal-links a {
+		transition: none;
+	}
+}
